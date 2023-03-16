@@ -1,0 +1,67 @@
+.wrapper{
+    margin-top:1rem;
+    padding:15px;
+    border-radius:10px;
+}
+.wrapper h3{
+    margin:15px 0;
+}
+.miniprofile{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+      /* background: #131212f4; */
+        background: linear-gradient(21deg, #029ff3, #1beabd);
+      padding: 25px 0;
+      border-radius: 15px;
+}
+
+.miniprofile > img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
+.miniprofile > span {
+    font-weight: 700;
+    cursor: pointer;
+}
+.miniText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+.userHeader{
+    font-size: 20px;
+}
+
+.suggestions{
+    background: #0d0c0cf2;
+    padding:10px;
+    border-radius:10px;
+}
+
+.followers{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+.followers > img {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.followers > button {
+    cursor:pointer;
+    padding:5px 10px;
+    background:aqua;
+    border:none;
+}
+.username{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    text-align: start;
+    padding:5px;
+}

@@ -1,0 +1,96 @@
+.wrapper {
+  display: flex;
+  background: #36454f;
+  min-height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  padding:5px 10px;
+}
+
+.searchbar {
+  margin: auto auto;
+  text-align: center;
+  width: 50vw;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-left: 10px;
+  font-size: 35px;
+}
+
+.searchbar > input {
+  text-align: center;
+  border: transparent;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 15px;
+  background: linear-gradient(21deg, #10abff, #1beabd);
+}
+
+.searchbar ::placeholder {
+  font-size: 16px;
+  color: var(--pearl);
+}
+
+.iconBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 20vw;
+  overflow: hidden;
+}
+
+.icons {
+  font-size: 28px;
+  padding: auto 10px;
+  cursor: pointer;
+  position:relative;
+  transition: .2s ease-in-out;
+}
+
+.icons:hover{
+transform:translateY(5px) rotate(10deg)
+}
+
+.profile {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: auto 10px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .icons {
+    display: none;
+  }
+  .active{
+  display:block;
+  padding:5px 0;
+  font-size: 50px;
+}
+  .iconBar{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .iconBar {
+    width: 15vw;
+  }
+}

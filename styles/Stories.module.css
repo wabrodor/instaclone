@@ -1,0 +1,44 @@
+.wrapper{
+    display:flex;
+    gap :20px;
+    overflow-x: scroll;
+overflow-y: hidden;
+height:auto;
+padding:15px;
+margin-bottom:1rem;
+}
+
+.wrapper::-webkit-scrollbar{
+    background-color: transparent;
+    width:10px;
+    height:10px;
+}
+.wrapper::-webkit-scrollbar-track{
+   background:#36454f;
+}
+.wrapper::-webkit-scrollbar-thumb{
+   background:#1beabd;
+}
+.userList > p{
+  white-space: nowrap;
+  overflow: hidden;
+ text-align: center;
+ width:70px;
+  text-overflow: ellipsis;
+}
+.userList > img{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    padding:3px;
+    border: #10abff 1px solid;
+}
+.userList{
+    cursor: pointer;
+    transition: 0.5s all ease-out
+}
+
+
+.userList:hover{
+    transform: scale(1.1) rotate(10deg);
+}

@@ -1,0 +1,60 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2018/07/31/14/09/young-people-3575167_960_720.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background: #0d0c0c;
+  opacity: 0.9;
+  max-width: 500px;
+  min-height: 500px;
+  max-width: 50%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.header {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.header > h1{
+    margin-bottom: 10px;
+}
+.icon{
+    font-size: 50px;
+}
+.btn {
+    border-radius: 5px;
+    cursor: pointer;
+border: none;
+    text-transform: capitalize;
+    padding:10px; 
+    transition: all 0.3ms ease-out;
+}
+
+
+
+
+.btn:hover{
+   color: #000;  
+   transform: scale(1.1);
+}
+
+
+@media (max-width:900px){
+.card{
+    max-width: 100%;
+}
+}
